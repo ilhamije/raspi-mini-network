@@ -75,7 +75,7 @@ sudo systemctl status flaskraspi1
 <br/>
 If something <b>wrong</b> :x:, update the service with proper setting. Then restart the service.
 
-This is the example of wrong service setup:
+This is the result of wrong service setup:
 ```
 ● flaskraspi2]1.service - My Raspi 1
      Loaded: loaded (/etc/systemd/system/flaskraspi1.service; disabled; vendor preset: enabled)
@@ -92,6 +92,7 @@ Dec 02 16:22:21 raspberrypi2 systemd[1]: Failed to start My Raspi 1.
 ```
 <br/>
 If the service is <b>running properly</b> :white_check_mark:, you'll see something like this:
+
 ```
 ● flaskraspi1.service - My Raspi 1
      Loaded: loaded (/etc/systemd/system/flaskraspi1.service; disabled; vendor preset: enabled)
