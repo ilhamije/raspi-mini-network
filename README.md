@@ -15,6 +15,7 @@ $ ssh pi@192.168.1.14
 Put the password (from previous setting in Raspberry PI Imager)
 
 <br/>
+
 ### Software Part
 #### Once you logged in, Install this dependencies:
 ```
