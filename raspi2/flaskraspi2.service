@@ -1,0 +1,11 @@
+[Unit]
+Description=My Raspi 2
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/MyWebserver
+ExecStart=/usr/bin/python /home/pi2/MyWebserver/hello_world_2.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
