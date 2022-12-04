@@ -43,7 +43,7 @@ Create flask file:
 $ touch /home/pi/MyWebserver/hello_world_1.py
 ```
 
-See content in <b>raspi1</b> directory. Edit and save it as you wish.
+See content in [Raspi 1 python file](/raspi1/hello_world_1.py). Edit and save it as you wish.
 I put port 5001 for raspi1 and 5002 for raspi2.
 
 Test the webserver:
@@ -67,6 +67,7 @@ Create our service:
 ```
 $ vi /etc/systemd/system/flaskraspi1.service
 ```
+This is the content [Raspi 1 service](/raspi1/flaskraspi1.service). Edit and save as necessary.
 
 Then start the service, service name is <b>flaskraspi1</b> for device 1
 ```
