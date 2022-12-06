@@ -1,0 +1,17 @@
+{
+	"transactions":			        3587,
+	"availability":			      100.00,
+	"elapsed_time":			      120.96,
+	"data_transferred":		        2.20,
+	"response_time":		        0.03,
+	"transaction_rate":		       29.65,
+	"throughput":			        0.02,
+	"concurrency":			        1.00,
+	"successful_transactions":	        3587,
+	"failed_transactions":		           0,
+	"longest_transaction":		        0.17,
+	"shortest_transaction":		        0.02
+}
+LOG FILE: /Users/ilham/Runway/Kuliah/2022-gasal-jarkom/mini-network/logs/siege.log
+You can disable this log file notification by editing
+/Users/ilham/.siege/siege.conf and changing 'show-logfile' to false.
