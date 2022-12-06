@@ -12,8 +12,12 @@ do
   # siege 192.168.1.17:5003 -c $i -t 2m -l > logs/fe-concurrent-$i-byrequests.json
   # siege 192.168.1.15:5001 -c $i -t 2m -l > logs/be-concurrent-$i-byrequests.json
 
-  echo "lbmethod=bybusyness"
-  siege 192.168.1.17 -c $i -t 2m -l > logs/lb-concurrent-$i-bybusyness.json
-  siege 192.168.1.17:5003 -c $i -t 2m -l > logs/fe-concurrent-$i-bybusyness.json
-  siege 192.168.1.15:5001 -c $i -t 2m -l > logs/be-concurrent-$i-bybusyness.json
+  # echo "lbmethod=bybusyness"
+  # siege 192.168.1.17 -c $i -t 2m -l > logs/lb-concurrent-$i-bybusyness.json
+  # siege 192.168.1.17:5003 -c $i -t 2m -l > logs/fe-concurrent-$i-bybusyness.json
+  # siege 192.168.1.15:5001 -c $i -t 2m -l > logs/be-concurrent-$i-bybusyness.json
+
+
+  echo "direct hit from frontend to backend"
+  siege 192.168.1.17:5003 -c $i -t 2m -l > logs/fe-concurrent-$i-directbackend.json
 done
